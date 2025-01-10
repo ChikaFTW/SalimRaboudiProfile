@@ -12,7 +12,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,7 +29,7 @@
   <link href="css/responsive.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon.jpeg">
 
   <!-- =======================================================
     Theme Name: Folio
@@ -47,7 +47,7 @@
       <div class="container">
 
         <div class="logo">
-          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <a href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -55,7 +55,7 @@
         <ul class="nav-menu list-unstyled">
           <li><a href="#header" class="smoothScroll">Home</a></li>
           <li><a href="#about" class="smoothScroll">About</a></li>
-          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Achievements</a></li>
           <li><a href="#journal" class="smoothScroll">Blog</a></li>
           <li><a href="#contact" class="smoothScroll">Contact</a></li>
         </ul>
@@ -108,7 +108,7 @@
 			</p>
             <p class="separator">Graduating with excellent academic achievements, I have honed my expertise in cloud computing, infrastructure optimization, and scalable application deployment.My hands-on experience includes working with cutting-edge technologies such as containers, orchestration tools, serverless computing,
 			and cloud platforms like Microsoft Azure, Google Cloud Platform (GCP), and AWS. With an innovative mindset and a drive to succeed, I am eager to contribute
-			to forward-thinking organizations, solve complex challenges, and continuously grow in the ever-evolving tech industry."
+			to forward-thinking organizations, solve complex challenges, and continuously grow in the ever-evolving tech industry.
 
 </p>
 
@@ -129,48 +129,56 @@
 
           <div class="services-block">
 
-            <i class="ion-ios-browsers-outline"></i>
-            <span>UI/UX DESIGN</span>
+            <!-- <i class="ion-ios-browsers-outline"></i> -->
+			<i class="fa fa-cloud"></i>
+            <span>Cloud</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>			
+          </div>
+
+          <div class="services-block">
+
+           <i class="fa fa-chart-line"></i>
+            <span>FinOps</span>
             <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
           </div>
 
           <div class="services-block">
 
-            <i class="ion-ios-lightbulb-outline"></i>
-            <span>BRAND IDENTITY</span>
+            <i class="fa fa-cogs"></i>
+            <span>DevOps</span>
             <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
           </div>
 
           <div class="services-block">
 
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>WEB DESIGN</span>
+            <i class="fa fa-laptop-code"></i>
+            <span>Programming</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+		  
+		  <div class="services-block">
+
+           <i class="fa fa-code"></i>
+            <span>Software Development</span>
             <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
           </div>
 
           <div class="services-block">
 
-            <i class="ion-social-android-outline"></i>
-            <span>MOBILE APPS</span>
+            <i class="fa fa-tachometer-alt"></i>
+            <span>Monitoring</span>
             <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
           </div>
 
           <div class="services-block">
 
-            <i class="ion-ios-analytics-outline"></i>
-            <span>Analytics</span>
-            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-camera-outline"></i>
-            <span>PHOTOGRAPHY</span>
+            <i class="fa fa-brain"></i>
+            <span>Machine Learning</span>
             <p class="separator">To an English person, it will seem like simplified English,told me what </p>
 
           </div>
@@ -200,18 +208,20 @@
 
             <ul class="nav list-unstyled" id="portfolio-flters">
               <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".branding">branding</li>
-              <li class="filter" data-filter=".mockups">mockups</li>
-              <li class="filter" data-filter=".uikits">ui kits</li>
-              <li class="filter" data-filter=".webdesign">web design</li>
-              <li class="filter" data-filter=".photography">photography</li>
+              <li class="filter" data-filter=".cloud">Cloud</li>
+              <li class="filter" data-filter=".FinOps">FinOps</li>
+              <li class="filter" data-filter=".DevOps">DevOps</li>
+              <li class="filter" data-filter=".container">Containerization</li>
+              <li class="filter" data-filter=".Programming">Programming</li>
+			  <li class="filter" data-filter=".code"> Infrastructure as Code</li>
+			 
             </ul>
 
           </div>
 
           <div class="portfolio-container">
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Cloud FinOps Containerization Programming">
               <a class="popup-img" href="images/portfolio/1.jpg">
                 <img src="images/portfolio/1.jpg" alt="img">
               </a>
