@@ -521,6 +521,15 @@
           </div>
 
           <div class="col-lg-6">
+		  <div id="download-resume">
+  <button onclick="downloadResume()">Download My Resume</button>
+</div>
+
+<script>
+  function downloadResume() {
+    window.open('https://chikaftw.github.io/SalimRaboudiProfile/contactform/Salim_RABOUDI.pdf', '_blank');
+  }
+</script>
             <form action="https://chikaftw.github.io/SalimRaboudiProfile/contactform/contactform.php" method="post" role="form" class="contactForm">
               <div class="row">
 
@@ -610,13 +619,6 @@
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   
-  <script>
-    // Add click events for navigation links
-    document.getElementById('ab').addEventListener('click', function() {
-      window.scrollTo({ top: 820, left: 50, behavior: 'smooth' });
-    });
-
-  </script>
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
