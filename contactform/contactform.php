@@ -1,0 +1,33 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $subject = strip_tags(trim($_POST["subject"]));
+    $message = trim($_POST["message"]);
+
+    // Validate the data
+    if (empty($name) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($subject) || empty($message)) {
+        echo "Please fill in all fields and use a valid email address.";
+        exit;
+    }
+
+    // Email details
+    $recipient = "salim.7777@live.fr"; // Replace with your email address
+    $email_subject = "New Contact Form Message: $subject";
+    $email_body = "Name: $name\n";
+    $email_body .= "Email: $email\n\n";
+    $email_body .= "Message:\n$message\n";
+
+    // Headers
+    $headers = "From: $name <$email>";
+
+    // Send the email
+    if (mail($recipient, $email_subject, $email_body, $headers)) {
+        echo "OK"; // This message will trigger the success behavior in your JavaScript
+    } else {
+        echo "Sorry, there was an error sending your message.";
+    }
+} else {
+    echo "Invalid request method.";
+}
+?>
