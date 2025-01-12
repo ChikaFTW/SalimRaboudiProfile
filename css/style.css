@@ -27,8 +27,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+h1, h2, h3, h4, h5, h6 {  
+margin: 0;
+}
+
+h1 {
+color: #292929;
 }
 
 h2 {
@@ -255,6 +259,11 @@ nav ul li a {
   flex-direction: column;
 }
 
+#headerwhite {
+ background-color: rgba(0, 0, 0, 0.45);
+width: 410px;
+}
+
 .header-content h1 {
   font-size: 40px;
   font-weight: 700;
@@ -280,7 +289,7 @@ nav ul li a {
 
 .header-content .list-social li i {
   color: #fff;
-  font-size: 15px;
+  font-size: 35px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -424,7 +433,7 @@ nav ul li a {
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #b8a07e;
+  color: #f7f7f7;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -518,6 +527,7 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #contact {
+ background: rgba(0, 0, 0, 0.15);
   height: auto;
   width: 100%;
 }
