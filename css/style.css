@@ -241,7 +241,7 @@ nav ul li a {
 
 #header {
   background: url("../images/home-bg.jpeg") repeat scroll center center / cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
