@@ -283,7 +283,7 @@ nav ul li a {
   justify-content: center;
   flex-direction: column;
   width: 37%;
-  height: 25%;
+  height: 23%;
   padding: 5px; /* Add padding to avoid text overflow */
   box-sizing: border-box; /* Include padding in the element's dimensions */
 }
