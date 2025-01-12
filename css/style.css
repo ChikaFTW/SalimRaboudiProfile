@@ -252,16 +252,12 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
-
-
 
 #header .header-content {
   height: 100vh;
   text-align: left;
-  width: 50%;
+  width: 57%;
   display: flex;
   justify-content: center;
   flex-direction: column;
