@@ -244,9 +244,26 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/home-bg.jpeg") repeat scroll center center / cover;
+  background: url("../images/home-bg.jpeg") no-repeat center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
+
+
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    background-size: contain; /* Makes the image fit inside the container without cropping */
+    background-position: center; /* Centers the image on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    background-size: contain; /* Keeps the image visible on very small devices */
+    height: auto; /* Adjusts height dynamically */
+  }
 }
 
 
@@ -267,14 +284,21 @@ nav ul li a {
   flex-direction: column;
   width: 37%;
   height: 25%;
-  padding: 10px; /* Add padding to avoid text overflow */
+  padding: 5px; /* Add padding to avoid text overflow */
   box-sizing: border-box; /* Include padding in the element's dimensions */
 }
 
-#headerwhite h1, #headerwhite p {
+#headerwhite h1 {
   margin: 0;
+  text-align: Left; /* Center-align text for better appearance on small screens */
+  font-size: 2.45rem; /* Use relative units for font size */
+}
+
+#headerwhite p {
+margin: 10;
   text-align: left; /* Center-align text for better appearance on small screens */
-  font-size: 2rem; /* Use relative units for font size */
+  font-size: 1rem; /* Use relative units for font size */
+}
 }
 
 /* Add responsiveness for smaller screens using media queries */
@@ -317,7 +341,7 @@ nav ul li a {
 }
 
 .header-content p {
-  font-size: 120px;
+  font-size: 20px;
   letter-spacing: 5px;
   margin-top: 0;
   margin-bottom: 30px;
