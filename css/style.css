@@ -258,16 +258,30 @@ nav ul li a {
 
 @media screen and (max-width: 768px) {
   #header {
+	background: url("../images/home-bg2.jpeg") no-repeat center center ;
     background-size: cover;
     background-size: contain; /* Makes the image fit inside the container without cropping */
     background-position: center; /* Centers the image on smaller screens */
+height: 100%;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
 }
 
 @media screen and (max-width: 480px) {
+background: url("../images/home-bg2.jpeg") no-repeat center center ;
     background-size: cover;
     background-size: contain; /* Keeps the image visible on very small devices */
     height: auto; /* Adjusts height dynamically */
+height: 100%;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
 }
 
