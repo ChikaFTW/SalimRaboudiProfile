@@ -250,6 +250,7 @@ nav ul li a {
 }
 
 
+
 #header .header-content {
   height: 100vh;
   text-align: left;
@@ -260,8 +261,51 @@ nav ul li a {
 }
 
 #headerwhite {
- background-color: rgba(0, 0, 0, 0.45);
-width: 35%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 37%;
+  height: 25%;
+  padding: 10px; /* Add padding to avoid text overflow */
+  box-sizing: border-box; /* Include padding in the element's dimensions */
+}
+
+#headerwhite h1, #headerwhite p {
+  margin: 0;
+  text-align: left; /* Center-align text for better appearance on small screens */
+  font-size: 2rem; /* Use relative units for font size */
+}
+
+/* Add responsiveness for smaller screens using media queries */
+@media screen and (max-width: 768px) {
+  #headerwhite {
+    width: 70%; /* Expand the container for smaller screens */
+    height: auto; /* Let height adjust dynamically */
+  }
+  
+  #headerwhite h1 {
+    font-size: 1.8rem; /* Scale down the heading font size */
+  }
+
+  #headerwhite p {
+    font-size: 1rem; /* Scale down the paragraph font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #headerwhite {
+    width: 90%; /* Use almost the full screen width on phones */
+    height: auto; /* Adjust height automatically */
+  }
+
+  #headerwhite h1 {
+    font-size: 1.5rem; /* Further reduce heading font size */
+  }
+
+  #headerwhite p {
+    font-size: 0.9rem; /* Further reduce paragraph font size */
+  }
 }
 
 .header-content h1 {
@@ -273,7 +317,7 @@ width: 35%;
 }
 
 .header-content p {
-  font-size: 13px;
+  font-size: 120px;
   letter-spacing: 5px;
   margin-top: 0;
   margin-bottom: 30px;
