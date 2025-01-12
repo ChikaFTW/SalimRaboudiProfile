@@ -244,10 +244,14 @@ nav ul li a {
 /*-----------------------------------------------------------------------------------*/
 
 #header {
-  background: url("../images/home-bg.jpeg") no-repeat center center;
-  background-size: cover;
+  background: url("../images/home-bg.jpeg") no-repeat center center ;
+    background-size: cover; /* Ensures the image covers the container proportionally */
   height: 100%;
   width: 100%;
+  min-height: 100vh; /* Ensures it fills the viewport height */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center;
 
 
 }
@@ -501,7 +505,7 @@ margin: 10;
 }
 
 #portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #f7f7f7;
+  color: green;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
