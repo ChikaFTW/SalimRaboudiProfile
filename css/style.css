@@ -246,8 +246,8 @@ nav ul li a {
 #header {
   background: url("../images/home-bg.jpeg") no-repeat center center ;
     background-size: cover; 
-  height: 100%;
-  width: 100%;
+  height: auto ;
+  width: auto;
   min-height: 100vh; 
   display: flex;
   align-items: center;
@@ -272,8 +272,8 @@ nav ul li a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 37%;
-  height: 23%;
+  width: auto;
+  height: auto;
   padding: 5px; /* Add padding to avoid text overflow */
   box-sizing: border-box; /* Include padding in the element's dimensions */
 }
