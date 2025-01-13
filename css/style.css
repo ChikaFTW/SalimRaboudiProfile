@@ -216,13 +216,13 @@ nav ul li {
   font-weight: bold; 
   text-transform: none; 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease; /* Smooth hover effect */
+  transition: all 0.3s ease; 
 }
 
 #buttonresume1:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-  color: #eaeaea; /* Slightly lighter text */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  background-color: #0056b3; 
+  color: #eaeaea;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); 
 }
 nav ul li a {
   padding: 2px 0 0 0;
@@ -289,51 +289,51 @@ nav ul li a {
   flex-direction: column;
   width: auto;
   height: auto;
-  padding: 5px; /* Add padding to avoid text overflow */
-  box-sizing: border-box; /* Include padding in the element's dimensions */
+  padding: 5px; 
+  box-sizing: border-box; 
 }
 
 #headerwhite h1 {
   margin: 0;
-  text-align: Left; /* Center-align text for better appearance on small screens */
-  font-size: 5.7rem; /* Use relative units for font size */
+  text-align: Left; 
+  font-size: 5.7rem; 
 }
 
 #headerwhite p {
 margin: 10;
-  text-align: left; /* Center-align text for better appearance on small screens */
-  font-size: 1rem; /* Use relative units for font size */
+  text-align: left; 
+  font-size: 1rem; 
 }
 }
 
-/* Add responsiveness for smaller screens using media queries */
+
 @media screen and (max-width: 768px) {
   #headerwhite {
-    width: 70%; /* Expand the container for smaller screens */
-    height: auto; /* Let height adjust dynamically */
+    width: 70%; 
+    height: auto; 
   }
   
   #headerwhite h1 {
-    font-size: 1.8rem; /* Scale down the heading font size */
+    font-size: 1.8rem; 
   }
 
   #headerwhite p {
-    font-size: 1rem; /* Scale down the paragraph font size */
+    font-size: 1rem; 
   }
 }
 
 @media screen and (max-width: 480px) {
   #headerwhite {
-    width: 90%; /* Use almost the full screen width on phones */
-    height: auto; /* Adjust height automatically */
+    width: 90%;
+    height: auto; 
   }
 
   #headerwhite h1 {
-    font-size: 1.5rem; /* Further reduce heading font size */
+    font-size: 1.5rem; 
   }
 
   #headerwhite p {
-    font-size: 0.9rem; /* Further reduce paragraph font size */
+    font-size: 0.9rem; 
   }
 }
 
