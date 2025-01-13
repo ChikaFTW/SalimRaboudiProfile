@@ -10,6 +10,11 @@
 /*-----------------------------------------------------------------------------------*/
 
 body {
+
+transform: scale(0.79); /* Scale down to 75% */
+  transform-origin: top left; /* Adjust origin for better alignment */
+  width: 133.33%; /* Compensate for the scaling by increasing the width */   
+
   background: #ffffff;
   color: #898989;
   font-family: 'Poppins', helvetica;
@@ -257,7 +262,7 @@ nav ul li a {
 #header .header-content {
   height: 100vh;
   text-align: left;
-  width: auto; /* here am adjusting the right value to make a link between web & mobile */
+  width: 70%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -270,13 +275,13 @@ nav ul li a {
   flex-direction: column;
   width: auto;
   height: auto;
-  padding: 5px; 
-  box-sizing: border-box; 
+  padding: 5px; /* Add padding to avoid text overflow */
+  box-sizing: border-box; /* Include padding in the element's dimensions */
 }
 
 #headerwhite h1 {
   margin: 0;
-  text-align: Left; 
+  text-align: Left; /* Center-align text for better appearance on small screens */
   font-size: 5.7rem; /* Use relative units for font size */
 }
 
