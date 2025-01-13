@@ -11,10 +11,6 @@
 
 body {
 
-transform: scale(0.79); /* Scale down to 75% */
-  transform-origin: top left; /* Adjust origin for better alignment */
-  width: 133.33%; /* Compensate for the scaling by increasing the width */   
-
   background: #ffffff;
   color: #898989;
   font-family: 'Poppins', helvetica;
@@ -211,7 +207,23 @@ nav ul li {
   font-size: 14px;
   margin-left: 40px;
 }
+#buttonresume1 {
+  color: #ffffff; 
+  background-color: #007bff; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-transform: none; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
 
+#buttonresume1:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  color: #eaeaea; /* Slightly lighter text */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
 nav ul li a {
   padding: 2px 0 0 0;
   position: relative;
@@ -226,12 +238,14 @@ nav ul li a {
   text-transform: capitalize;
 }
 
+
+
 .logo {
-  float: left;
+  float:left;
 }
 
 .logo img {
-  width: 100px;
+  width: 150px;
   height: 50px;
 }
 
