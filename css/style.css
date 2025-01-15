@@ -261,7 +261,7 @@ nav ul li a {
 /*----------------------------------------------------------------------------------*/
 /*  Header
 /*-----------------------------------------------------------------------------------*/
-
+/* starting the page with awesome BG and a Hero Intro */
 #header {
   background: url("../images/home-bg.jpg") no-repeat center center ;
     background-size: cover; 
