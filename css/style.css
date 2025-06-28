@@ -28,6 +28,8 @@ body {
   box-sizing: border-box;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {  
 margin: 0;
 }
@@ -304,7 +306,7 @@ margin: 10;
   text-align: left; 
   font-size: 1rem; 
 }
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -711,4 +713,105 @@ margin: 10;
 
 .credits {
   font-size: 13px;
+}
+
+.gallery-wrapper {
+      overflow: hidden;
+      width: 100%;
+      background: #fff;
+      padding: 10px 0;
+    }
+
+    .gallery-track {
+      display: flex;
+      width: fit-content;
+      animation: scrollGallery 60s linear infinite;
+    }
+
+	[dir="rtl"] .gallery-track {
+  animation: scrollGalleryRtl 17s linear infinite;
+}
+
+    .gallery-track img {
+      width: 400px;
+      height: 290px;
+      object-fit: cover;
+      margin: 0 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.7s ease;
+    }
+
+    .gallery-track img:hover {
+      transform: scale(1.07);
+    }
+    .gallery-wrapper:hover .gallery-track {
+  animation-play-state: paused;
+}
+
+    @keyframes scrollGallery {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+	@keyframes scrollGalleryRtl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+/* Popup overlay */
+.image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.image-popup.active {
+  display: flex;
+}
+
+/* Popup image */
+.image-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Navigation arrows */
+.image-popup .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 0 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.image-popup .arrow.left {
+  left: 20px;
+}
+
+.image-popup .arrow.right {
+  right: 20px;
+}
+
+/* Close button */
+.image-popup .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }

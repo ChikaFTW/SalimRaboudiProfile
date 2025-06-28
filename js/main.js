@@ -155,3 +155,49 @@ $(window).load(function(){
   });
 
 })
+
+const images = document.querySelectorAll('.gallery-track img');
+  const popup = document.createElement('div');
+  popup.className = 'image-popup';
+  popup.innerHTML = `
+    <span class="close">&times;</span>
+    <span class="arrow left">&#10094;</span>
+    <img src="" alt="popup image">
+    <span class="arrow right">&#10095;</span>
+  `;
+  document.body.appendChild(popup);
+
+  const popupImg = popup.querySelector('img');
+  const closeBtn = popup.querySelector('.close');
+  const leftArrow = popup.querySelector('.arrow.left');
+  const rightArrow = popup.querySelector('.arrow.right');
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    popupImg.src = images[index].src;
+    popup.classList.add('active');
+    currentIndex = index;
+  }
+
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => showImage(index));
+  });
+
+  closeBtn.addEventListener('click', () => popup.classList.remove('active'));
+
+  leftArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  });
+
+  rightArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  });
+
+  // Optional: ESC key closes popup
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') popup.classList.remove('active');
+  });
+  
