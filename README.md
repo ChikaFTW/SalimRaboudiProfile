@@ -55,3 +55,8 @@ JavaScript syntax and local asset references checked. Chromium desktop/mobile ch
 OVHcloud appears after Azure in the expertise band and cloud toolkit, with matching icon dimensions. Helm and GitOps were added to the containers expertise card; GitOps also appears in the toolkit. GitOps is represented by the Git logo, as requested. GitOps is a workflow; this is the Git logo rather than a separate official GitOps mark. KVM appears once per project stack and uses an original CPU/virtualization icon distinct from the Linux logo. Both supplied PDFs are included without modifying their contents.
 
 Git Logo by Jason Long: https://git-scm.com/community/logos — licensed under Creative Commons Attribution 3.0 Unported (https://creativecommons.org/licenses/by/3.0/).
+
+## Version 5
+Jobs Hunt links use green, an underline, a visible border and an external-link arrow. Supplied application logos are displayed as exact CSS crops from `assets/brands/app-logos.jpeg`; the original images are preserved. Company logos appear with matching experience entries. Target, FixEat, Amoria, Jobs Hunt and ESPRIT appear on selected-work cards. ESPRIT and ISET Radès appear in education. Jobs Hunt is also included as a sixth selected project using CV-supported details. The hero certification label is positioned within the portrait bounds, with the actual FinOps badge.
+
+Version 6: supplied Université Italie Services logo added to its experience and selected-project cards.

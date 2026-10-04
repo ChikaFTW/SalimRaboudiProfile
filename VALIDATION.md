@@ -21,3 +21,7 @@ External certificate verification endpoints were transcribed from supplied certi
 - OVHcloud follows Azure; Helm and GitOps appear in the expertise band.
 
 Version 4: GitOps uses the supplied-style Git logo in both locations; image references verified in Chromium.
+
+Version 5: verified six selected projects, green Jobs Hunt link, organization/application logos, and full hero badge containment at widths 320/390/768/1440. Project filtering, gallery navigation, reduced motion, both CV downloads and image loading passed regression checks. Hero, education and project layouts were visually reviewed.
+
+Version 6: Université Italie logo added in both relevant cards; browser regression checks passed.
