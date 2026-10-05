@@ -62,3 +62,7 @@ Jobs Hunt links use green, an underline, a visible border and an external-link a
 Version 6: supplied Université Italie Services logo added to its experience and selected-project cards.
 
 Version 7: Azure Fundamentals AZ-900 Exam Prep certificate and Coursera verification link added. Both CVs remain unchanged as supplied; the English CV wording is confirmed intentional.
+
+
+## Phone home-screen icon
+Android: open the deployed HTTPS site in Chrome, then use Add to home screen or Install if offered. iPhone: Safari > Share > Add to Home Screen. Remove an old shortcut and add it again to refresh its cached icon. Installation availability depends on the browser; this release supplies home-screen icons and a manifest, with no offline mode. CV language buttons open the PDF; adjacent download icons request saving the same original PDF.
