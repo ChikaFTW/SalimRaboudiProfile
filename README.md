@@ -35,7 +35,7 @@ Content is based on the supplied current CV. The FinOps Certified Engineer is ma
 - Jobs Hunt links to https://jobs-hunt.com.
 - Education title has no forced line break; it fits on one line on desktop and wraps naturally on smaller screens.
 - Certificate previews open supplied documents. Verification links are transcribed from the certificates. AWS is correctly labeled Cloud Practitioner Essentials course completion, not an exam certification.
-- Azure remains listed from the CV; its certificate preview has not been supplied.
+- Azure exam-preparation specialization includes the supplied certificate preview and Coursera verification link.
 - Jira and the planned FinOps Practitioner pathway have been removed from current learning copy.
 
 ## English and French CV downloads
@@ -43,7 +43,7 @@ Both supplied updated CVs are installed and downloadable:
 - `assets/Salim_RABOUDI_EN.pdf` — English (`Salim_RABOUDI(1).pdf`).
 - `assets/Salim_RABOUDI_FR.pdf` — French (`Salim_RABOUDI(2).pdf`).
 Replace these files in place for future updates. Hero and contact buttons already point to their respective languages.
-The supplied English PDF still mentions the planned FinOps Certified Practitioner pathway. It is retained unchanged pending a later CV correction.
+The English PDF retains the FinOps Certified Practitioner plan exactly as requested by the user.
 
 ## Asset attribution
 Technology SVGs: Devicon (https://github.com/devicons/devicon), and Simple Icons (https://simpleicons.org). Logos remain the property of their respective owners. The generic symbols in this site represent engineering concepts rather than vendor marks.
@@ -60,3 +60,5 @@ Git Logo by Jason Long: https://git-scm.com/community/logos — licensed under C
 Jobs Hunt links use green, an underline, a visible border and an external-link arrow. Supplied application logos are displayed as exact CSS crops from `assets/brands/app-logos.jpeg`; the original images are preserved. Company logos appear with matching experience entries. Target, FixEat, Amoria, Jobs Hunt and ESPRIT appear on selected-work cards. ESPRIT and ISET Radès appear in education. Jobs Hunt is also included as a sixth selected project using CV-supported details. The hero certification label is positioned within the portrait bounds, with the actual FinOps badge.
 
 Version 6: supplied Université Italie Services logo added to its experience and selected-project cards.
+
+Version 7: Azure Fundamentals AZ-900 Exam Prep certificate and Coursera verification link added. Both CVs remain unchanged as supplied; the English CV wording is confirmed intentional.

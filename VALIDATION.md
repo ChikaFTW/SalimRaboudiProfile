@@ -25,3 +25,5 @@ Version 4: GitOps uses the supplied-style Git logo in both locations; image refe
 Version 5: verified six selected projects, green Jobs Hunt link, organization/application logos, and full hero badge containment at widths 320/390/768/1440. Project filtering, gallery navigation, reduced motion, both CV downloads and image loading passed regression checks. Hero, education and project layouts were visually reviewed.
 
 Version 6: Université Italie logo added in both relevant cards; browser regression checks passed.
+
+Version 7: four certificate previews present; Azure links to the supplied PDF and its printed Coursera verification URL. Browser image checks, gallery controls, filters and responsive widths 320/390/768/1440 passed. Both CV files remain unchanged.
